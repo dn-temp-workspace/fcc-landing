@@ -1,3 +1,246 @@
 :root {
     --landing-bg: #43d6ce;
 }
+
+* {
+    font-family: "Work Sans", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header.navbar-header {
+    display: flex;
+}
+
+img.brand-img {
+    max-width: 50px;
+    margin-top: 10px;
+}
+
+nav {
+    padding: 10px 0;
+}
+
+nav > ul > li {
+    display: inline;
+    list-style: none;
+}
+
+a.nav-button {
+    text-decoration: none;
+}
+
+div.full-size-container {
+    background: var(--landing-bg);
+    max-width: 100%;
+}
+
+ul.navigation-list {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+header > div.brand > img {
+    display: block;
+}
+
+header ul {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+li a {
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+}
+
+nav a:hover {
+    font-weight: 700;
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    header.navbar-header {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 1140px;
+        padding: 10px 0 10px 0;
+    }
+
+    header ul li {
+        padding: 0 1.2em;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    header.navbar-header {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 768px;
+        padding: 10px 0 10px 0;
+    }
+
+    header ul li {
+        padding: 0 1.2em;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    header.navbar-header {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 650px;
+        padding: 10px 0 10px 0;
+    }
+
+    header ul li {
+        padding: 0 1em;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    header.navbar-header {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 550px;
+        padding: 10px 0 10px 0;
+    }
+
+    header ul li {
+        padding: 0 1em;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+    header.navbar-header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header > div.brand {
+        margin: 0 auto;
+        padding: 10px 0 0 0;
+    }
+
+    nav {
+        margin: 0 auto;
+    }
+
+    header ul li {
+        font-size: 0.9em;
+        padding: 0 0.3em;
+    }
+}
+
+/* TO DO 
+** ujednolicić reguły dla responsywności,
+** 
+
+*/
+
+/* CSS do GŁOWNEGO */
+
+#main {
+    display: flex;
+}
+
+#left {
+    background: var(--landing-bg);
+    color: white;
+}
+
+#right {
+    background: var(--landing-bg);
+}
+
+#mockup {
+    margin-top: 10%;
+    display: block;
+    margin-left: -17%;
+}
+
+.responsive {
+    max-width: 290px;
+}
+
+.whiteboard {
+    background-color: inherit;
+    box-sizing: border-box;
+    font-size: 70px;
+    font-weight: 200;
+    max-width: 500px;
+    margin-left: 400px;
+    margin-top: 27vh;
+}
+
+@media screen and (orientation: portrait) {
+    #main {
+        flex-direction: column;
+    }
+
+    #left {
+        width: 100%;
+    }
+
+    #right {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 851px) and (max-width: 1199px) {
+    #main {
+        flex-direction: row;
+        height: 100vh;
+    }
+
+    #left {
+        width: 50%;
+    }
+    
+    #right {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #main {
+        flex-direction: row;
+        height: 90vh;
+    }
+
+    #left {
+        width: 70%;
+    }
+    
+    #right {
+        width: 30%;
+    }
+}
+
+body,
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-weight: 200;
+}
+
+p {
+    font-size: 26px;
+    margin-top: -95px;
+    padding-left: 5px;
+}
