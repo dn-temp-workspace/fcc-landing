@@ -56,6 +56,7 @@ li a {
     color: white;
     font-family: 'Work Sans', sans-serif;
     font-weight: 500;
+    letter-spacing: -1px;
 }
 
 /* button in navbar */
@@ -161,103 +162,67 @@ a.nav-button-download {
     }
 }
 
-/* TO DO 
-** ujednolicić reguły dla responsywności,
-** 
-
-*/
-
-/* CSS do GŁOWNEGO */
+/* #main styles */
 
 #main {
+    align-items: center;
     display: flex;
+    flex-direction: row;
+    background-color: var(--landing-bg);
 }
 
-#left {
-    background: var(--landing-bg);
-    color: white;
-}
-
-#right {
-    background: var(--landing-bg);
-}
-
-#mockup {
-    margin-top: 10%;
-    display: block;
-    margin-left: -25%;
+.image {
 }
 
 .responsive {
-    max-width: 290px;
+    max-width: 240px;
 }
 
-.whiteboard {
-    background-color: inherit;
-    box-sizing: border-box;
-    font-size: 70px;
-    font-weight: 200;
-    max-width: 500px;
-    margin-left: 380px;
-    margin-top: 27vh;
+@media screen and (min-width: 1200px) {
+    #main {
+        height: 70vh;
+    }
+
+    h1 {
+        color: white;
+        font-weight: 200;
+        letter-spacing: -1px;
+        text-align: center;
+    }
+
+    .main-content-box {
+        margin: 0 auto;
+    }
+
+    .image {
+        margin: 0 auto;
+    }
 }
+
 
 @media screen and (orientation: portrait) {
     #main {
         flex-direction: column;
     }
-
-    #left {
-        width: 100%;
-    }
-
-    #right {
-        width: 100%;
-    }
 }
 
 @media screen and (min-width: 851px) and (max-width: 1199px) {
     #main {
-        flex-direction: row;
-        height: 100vh;
-    }
-
-    #left {
-        width: 50%;
+        flex-direction: column;
+        height: 60vh;
     }
     
-    #right {
-        width: 50%;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    #main {
-        flex-direction: row;
-        height: 90vh;
+    h1 {
+        color: white;
+        font-weight: 200;
+        letter-spacing: -1px;
+        text-align: center;
     }
 
-    #left {
-        width: 70%;
+    p {
+        color: white;
+        letter-spacing: -1px;
+        margin-top: -20px;
+        margin-bottom: 50px;
     }
-    
-    #right {
-        width: 30%;
-    }
-}
-
-body,
-h1 {
-    margin: 0;
-    padding: 0;
-}
-
-h2 {
-    font-weight: 200;
-}
-
-p {
-    font-size: 26px;
-    margin-top: -95px;
-    padding-left: 5px;
 }
