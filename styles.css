@@ -58,9 +58,6 @@ li a {
     font-weight: 500;
 }
 
-nav a:hover {
-}
-
 /* button in navbar */
 a.nav-button-download {
     background-color: inherit;
