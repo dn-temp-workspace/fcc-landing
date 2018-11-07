@@ -162,6 +162,9 @@ a.nav-button-download {
     }
 }
 
+/* end of navbar styling */
+/* ------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------- */
 /* #main styles */
 
 #main {
@@ -171,14 +174,11 @@ a.nav-button-download {
     background-color: var(--landing-bg);
 }
 
-.image {
-}
-
 .responsive {
     max-width: 240px;
 }
 
-@media screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
     #main {
         height: 70vh;
     }
@@ -199,14 +199,8 @@ a.nav-button-download {
     }
 }
 
-
-@media screen and (orientation: portrait) {
-    #main {
-        flex-direction: column;
-    }
-}
-
-@media screen and (min-width: 851px) and (max-width: 1199px) {
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
     #main {
         flex-direction: column;
         height: 60vh;
@@ -225,4 +219,80 @@ a.nav-button-download {
         margin-top: -20px;
         margin-bottom: 50px;
     }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #main {
+        flex-direction: column;
+    }
+
+    h1 {
+        color: white;
+        font-weight: 200;
+        letter-spacing: -1px;
+        text-align: center;
+    }
+
+    p {
+        color: white;
+        letter-spacing: -1px;
+        margin-top: -20px;
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+    #main {
+        flex-direction: column;
+    }
+
+    h1 {
+        color: white;
+        font-weight: 200;
+        letter-spacing: -1px;
+        text-align: center;
+    }
+
+    p {
+        color: white;
+        letter-spacing: -1px;
+        margin-top: -20px;
+        margin-bottom: 50px;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+    #main {
+        flex-direction: column;
+    }
+
+    h1 {
+        color: white;
+        font-weight: 200;
+        letter-spacing: -1px;
+        text-align: center;
+    }
+
+    p {
+        color: white;
+        letter-spacing: -1px;
+        margin-top: -20px;
+        margin-bottom: 50px;
+    }
+}
+
+/* end of #main styling */
+/* ------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------- */
+/* #logos styles */
+
+#logos {
+    background: #eee;
+    max-width: 100%;
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
 }
