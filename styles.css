@@ -183,11 +183,19 @@ a.nav-button-download {
         height: 70vh;
     }
 
-    h1 {
+    #main h1 {
         color: white;
+        font-size: 100px;
         font-weight: 200;
         letter-spacing: -1px;
         text-align: center;
+    }
+
+    #main p {
+        color: white;
+        letter-spacing: -1px;
+        margin-top: -20px;
+        margin-bottom: 50px;
     }
 
     .main-content-box {
@@ -202,22 +210,30 @@ a.nav-button-download {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     #main {
-        flex-direction: column;
+        flex-direction: row;
         height: 60vh;
     }
     
-    h1 {
+    #main h1 {
         color: white;
         font-weight: 200;
         letter-spacing: -1px;
         text-align: center;
     }
 
-    p {
+    #main p {
         color: white;
         letter-spacing: -1px;
         margin-top: -20px;
         margin-bottom: 50px;
+    }
+
+    .main-content-box {
+        margin: 0 auto;
+    }
+
+    .image {
+        margin: 0 auto;
     }
 }
 
@@ -295,4 +311,9 @@ a.nav-button-download {
 
 h2 {
     margin: 0;
+}
+
+.button-form {
+    display: inline;
+    list-style: none;
 }
