@@ -178,6 +178,11 @@ a.nav-button-download {
     max-width: 240px;
 }
 
+.button-form {
+    display: inline;
+    list-style: none;
+}
+
 @media only screen and (min-width: 1200px) {
     #main {
         height: 70vh;
@@ -306,16 +311,38 @@ a.nav-button-download {
 /* #logos styles */
 
 #logos {
-    background: #eee;
+    background: #f5f6fa;
     max-width: 100%;
     margin: 0;
 }
 
-h2 {
+#logos > h2 {
+    font-size: 50px;
+    font-weight: 200;
     margin: 0;
+    padding: 100px 0 0 0;
+    text-align: center;
 }
 
-.button-form {
-    display: inline;
-    list-style: none;
+.logos-wrapper {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    height: 300px;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.responsive-logos {
+    filter: grayscale(100%);
+    max-width: 190px;
+    max-height: 40px;
+    -webkit-filter: grayscale(100%);
+}
+
+.responsive-logos:hover {
+    filter: grayscale(0%);
+    transition: filter 0.2s ease-in-out;
+    -webkit-filter: grayscale(0%);
 }
