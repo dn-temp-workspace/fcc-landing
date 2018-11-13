@@ -337,11 +337,12 @@ a.nav-button-download {
     filter: grayscale(100%);
     max-width: 190px;
     max-height: 40px;
+    transition: filter 0.3s ease-in-out;
     -webkit-filter: grayscale(100%);
 }
 
 .responsive-logos:hover {
     filter: grayscale(0%);
-    transition: filter 0.2s ease-in-out;
+    transition: filter 0.3s ease-in-out;
     -webkit-filter: grayscale(0%);
 }
