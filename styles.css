@@ -20,9 +20,9 @@ img.brand-img {
     margin-top: 10px;
 }
 
-nav {
+/* nav {
     padding: 10px 0;
-}
+} */
 
 nav > ul > li {
     display: inline;
@@ -39,8 +39,7 @@ div.full-size-container {
 }
 
 ul.navigation-list {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 10px 20px;
 }
 
 header > div.brand > img {
